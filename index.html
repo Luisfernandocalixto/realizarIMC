@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="App">
+
+        <main>
+            <div class="clase">
+                <form class="clase" id="formulario" action="">
+
+                    <label for="">Peso</label>
+                    <input type="number" min="0" id="Peso" required>
+                    <p>Kg</p>
+                    <label for="">Altura</label>
+                    <input type="number" step="0.01" min="0" id="Altura" name="Altura" placeholder="Ejemplo: 1.50"
+                        required>
+                    <p>Metros</p>
+                    <button type="submit">Calcular</button>
+
+                </form>
+
+                <br>
+                <div class="contenedor">
+
+                    <div class="datosResultantes">
+                        <h3 id="Resultado">0</h3>
+                        <div>
+                            <h5>IMC</h5>
+                            <h6 id="estado"></h6>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="clase">
+                        <p>Información</p>
+                    </div>
+
+                    <div class="indicador">
+
+                        <p class="bajo">Peso bajo</p>
+                        <p class="normal">Normal</p>
+                        <p class="alto">Sobrepeso</p>
+
+                    </div>
+                    <div class="rangos indicador datosResultantes">
+
+                        <p class="">16.0</p>
+                        <p class="">18.5</p>
+                        <p class="">25.0</p>
+                        <p class="">40.0</p>
+
+                    </div>
+
+                    <div id="ventanaModal" class="modal">
+                        <div class="contenido-modal">
+                            <h7>Este IMC no parece correcto.<br>Asegurese de que la altura<br> y el peso que introdujo
+                                son<br>correctos</h7>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+
+    </div>
+
+
+
+
+    <!-- Referencia de script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
