@@ -16,18 +16,18 @@ document.getElementById('formulario').addEventListener('submit', (event) => {
         modal.style.display = 'block'
     } else if (calcular <= 18.4) {
         mensajeEstado.textContent = 'Peso bajo'
-        mensajeEstado.style.color = 'Blue'
+        mensajeEstado.style.color = '#b3ccff'
     } else if (calcular >= 18.5 && calcular <= 25.0) {
         mensajeEstado.textContent = 'Normal'
-        mensajeEstado.style.color = 'Green'
+        mensajeEstado.style.color = '#ccffc4'
     } else if (calcular >= 25.1) {
         mensajeEstado.textContent = 'Sobrepeso'
-        mensajeEstado.style.color = 'Red'
+        mensajeEstado.style.color = '#ffc0c0'
     }
 
-    if (!pesoIngresado.textContent && !alturaIngresada.textContent) {
-        document.getElementById('formulario').reset(); // Limpiar los campos del form
-    }
+    // if (!pesoIngresado.textContent && !alturaIngresada.textContent) {
+    //     document.getElementById('formulario').reset(); // Limpiar los campos del form
+    // }
 
 });
 

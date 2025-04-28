@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Calcula tu Índice de Masa Corporal">
-    <meta property="og:url" content="https://imc.netlify.app">
-    <meta property="og:image"
-        content="https://images.pexels.com/photos/8296991/pexels-photo-8296991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:url" content="https://realizar-imc.netlify.app">
+    <meta property="og:image" content="./image/calculate.webp">
     <meta property="og:description" content="Calcula tu Índice de Masa Corporal">
-    <link rel="shortcut icon" href="https://img.icons8.com/cotton/64/calculator-checked.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/image/check.webp" type="image/x-icon">
     <title>Calcula tu Índice de Masa Corporal</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <div class="App">
+        <div>Calcula tu índice de masa corporal</div>
 
         <main>
             <div class="clase">
-                <form class="clase" id="formulario" action="">
+                <form class="clase" id="formulario">
 
-                    <label for="">Peso</label>
-                    <input type="number" min="0" id="Peso" required>
+                    <label for="Peso">Peso</label>
+                    <input type="number" min="0" id="Peso" placeholder="Ejemplo:67" required>
                     <p>Kg</p>
-                    <label for="">Altura</label>
+                    <label for="Altura">Altura</label>
                     <input type="number" step="0.01" min="0" id="Altura" name="Altura" placeholder="Ejemplo: 1.50"
                         required>
                     <p>Metros</p>
@@ -40,7 +40,7 @@
                         <h3 id="Resultado">0</h3>
                         <div>
                             <h5>IMC</h5>
-                            <h6 id="estado"></h6>
+                            <div id="estado"></div>
                         </div>
                     </div>
                     <hr>
@@ -67,8 +67,8 @@
 
                     <div id="ventanaModal" class="modal">
                         <div class="contenido-modal">
-                            <h7>Este IMC no parece correcto.<br>Asegurese de que la altura<br> y el peso que introdujo
-                                son<br>correctos</h7>
+                            <h6>Este IMC no parece correcto.<br>Asegurese de que la altura<br> y el peso que introdujo
+                                son<br>correctos</h6>
                         </div>
 
                     </div>
